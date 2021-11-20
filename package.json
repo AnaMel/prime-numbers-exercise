@@ -1,0 +1,23 @@
+{
+  "name": "prime-numbers-exercise",
+  "version": "1.0.0",
+  "description": "Web app implementation of Sieve of Eratosthenes algorithm",
+  "main": "index.js",
+  "scripts": {
+      "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaMel/prime-numbers-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnaMel/prime-numbers-exercise/issues"
+  },
+  "homepage": "https://github.com/AnaMel/prime-numbers-exercise#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
