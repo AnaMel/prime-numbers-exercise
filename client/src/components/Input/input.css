@@ -4,3 +4,13 @@
     justify-content: center;
     align-items: center;
 }
+
+.customInput__label {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.customInput__input {
+    height: 30px;
+}

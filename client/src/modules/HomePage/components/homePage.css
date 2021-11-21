@@ -1,8 +1,51 @@
 .homePage {
     height: 100vh;
-    background-color: goldenrod;
+    background-color: #467f7d;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+}
+
+.homePage__submitButton {
+    margin-top: 35px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    background: goldenrod;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 0.4s ease 0s;
+    width: 100px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+}
+
+.homePage__submitButton:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+}
+
+.homePage__errors {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ff7f7f;
+}
+
+.homePage__medianPrimeNumbers {
+    margin-top: 50px;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homePage__medianPrimeNumbers__label {
+    margin-bottom: 5px;
 }
