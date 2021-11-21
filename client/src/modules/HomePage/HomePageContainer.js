@@ -49,7 +49,7 @@ const HomePageContainer = () => {
         }
 
         // on edit action, reset displayed result if any
-        if (medianPrimeNumbers.length) {
+        if (medianPrimeNumbers?.length) {
             setMedianPrimeNumbers();
         }
 
