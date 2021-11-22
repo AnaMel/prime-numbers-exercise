@@ -19,3 +19,5 @@ This is a Web app implementation of Sieve of Eratosthenes algorithm.
 ## To run tests
 
 8. Run `npm run test` to run all unit tests
+
+![Screen Shot 2021-11-22 at 2 01 11 PM](https://user-images.githubusercontent.com/20029421/142920847-04e585fd-1005-4457-a02f-f4291564c461.png)
