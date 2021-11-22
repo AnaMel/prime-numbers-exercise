@@ -13,4 +13,10 @@
 
 .customInput__input {
     height: 30px;
+    -moz-appearance: textfield;
+}
+
+.customInput__input::-webkit-outer-spin-button,
+.customInput__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }

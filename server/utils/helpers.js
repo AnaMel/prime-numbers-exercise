@@ -7,6 +7,8 @@ module.exports = {
     },
     getPrimeNumbersByUpperLimit: function (n) {
         let primeNumbers = Array.from({ length: n++ }, (_, i) => {
+            // pre-mark 0 and 1st elements of array as undefined
+            // absence of the value indicates that the value at the index is not a prime number
             if (!i || i === 1) {
                 return undefined;
             }
@@ -14,9 +16,8 @@ module.exports = {
             return i;
         });
 
-        // mark all the numbers which are divisible by i as false (ignore i itself)
+        // mark all the numbers which are divisible by i as undefined (ignore i itself)
         // and are greater than or equal to the square of it
-        // start at 2 bc ...
         for (let i = 2; i ** 2 <= n; i++) {
             if (!!primeNumbers[i]) {
                 for (let j = i ** 2; j <= n; j += i) {

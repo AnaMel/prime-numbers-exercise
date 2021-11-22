@@ -19,7 +19,7 @@ const HomePageContainer = () => {
         return true;
     };
 
-    const _onSubmit = () => {
+    const _onSubmit = async () => {
         // on submit, validate input is a whole, positive value
         const isValidInput = _onValidateInput(upperLimit);
 
@@ -27,7 +27,7 @@ const HomePageContainer = () => {
             return;
         }
 
-        (async () => {
+        try {
             const rawResponse = await fetch(URLS.generateMedianPrimeNumbers, {
                 method: 'POST',
                 headers: {
@@ -36,10 +36,19 @@ const HomePageContainer = () => {
                 },
                 body: JSON.stringify({ upperLimit: parseInt(upperLimit) }),
             });
+            if (!rawResponse.ok) {
+                const { errorMsg = '' } = await rawResponse.json();
+                setError(errorMsg);
+                return;
+            }
 
             const { result = [] } = await rawResponse.json();
             setMedianPrimeNumbers(result);
-        })();
+        } catch (exception) {
+            // printing exception to console as part of this project
+            // in production, this should be captured in some sort of monitoring tool (i.e. DataDog, LogDNA, etc.)
+            console.log('Caught error: ' + exception.message);
+        }
     };
 
     const _onEdit = (value) => {
