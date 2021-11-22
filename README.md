@@ -1,3 +1,13 @@
+# Additional Questions
+
+1. Do you have production experience with Node prior to the submission of this code challenge? If yes, for how long?
+  Yes, not as a primary language, but I occasionally worked with a service written in Node over the last 3.5 years.
+2. Do you have production experience with React prior to the submission of this code challenge? If yes, for how long?
+  Yes, as the primary language for the application front-end. 3 years 8 months
+3. My full name.
+  Anastasiya Melentyeva
+
+
 This is a Web app implementation of Sieve of Eratosthenes algorithm.
 
 # Getting Started
